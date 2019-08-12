@@ -72,9 +72,29 @@ C# allows for control over **where** your class members can be accessed, achieve
  - protected: Access restricted to own class, and any child class
  - internal: Access restricted to Assembly (essentially, your project's compiled .dll)
 
-To see these in action, let's examine a simple demonstration 
+To see these in action, let's examine a simple demonstration - that is a common roadblock for new C# developers. 
+
+![](https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/private-access.png)
+
+Here, I am attempting to  **access**  the Color field from a  **Vehicle**  in my  **Program**  class. And HEY! the compiler is telling me that it is inaccessible. This is because even though I haven't yet listed one, there is a default member accessibility level:  **private**, which means that you may only refer to that member  _from the class from which it was defined_ - in this example, that would mean only from within the body of the Vehicle class. If I wish to access Color and MaxNumPassengers from my Program class, I would have to add a keyword to the member definition:  **public**, which has  _no access restrictions_**.  
+**
+
+Our Vehicle class now looks like so:
+
+```javascript 
+class Vehicle
+{
+    public int MaxNumPassengers;
+    public string Color;
+    public Vehicle(int maxPass, string color)
+    {
+        MaxNumPassengers = maxPass;
+        Color = color;
+    }
+}
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDgzMzY1NTcsLTEzMzc2NDY4MSwtMT
-Y4MjkyNzY4OV19
+eyJoaXN0b3J5IjpbOTI3MzcxNzg3LC0xMzM3NjQ2ODEsLTE2OD
+I5Mjc2ODldfQ==
 -->
