@@ -15,7 +15,7 @@ public class Vehicle
 }
 ```
 This is all it takes to define a class. In order to create an object of a class, though, we must invoke our class as a new object reference. **Take special note where we put each piece of this code in our Program.cs file!**
-```
+```javascript
 public class Program
 {
     public static void Main(string[] args)
@@ -28,7 +28,7 @@ public class Program
 }
 ```
 With this in our Main function, we have declared the variable of myVehicle to be an instance (or object) of the class Vehicle. We also added a field of NumPassengers to the class, that becomes part of the object variable when it is created. If we wanted to pass a variable to this object when creating it to set some of its data members, such as the NumPassengers field, we need to include a function inside the class called a constructor. As the name implies, constructors are functions that exist to "construct" instances of a class. A constructor is called the moment an object is created using the **new** keyword and just requires adding a function with the same name as the class.
-```
+```javascript
 public class Vehicle
 {
      public int NumPassengers;
@@ -40,7 +40,7 @@ public class Vehicle
      }
 }
 ```
-```
+```javascript
 public class Program
 {
     public static void Main(string[] args)
@@ -52,7 +52,7 @@ public class Program
 }
 ```
 If we want all instances of our class to have some initial value, we can achieve this by providing a Constructor that takes no arguments, but initializes values within the Constructor body.
-```
+```javascript
 public class Vehicle
 {
      public int NumPassengers;
@@ -65,5 +65,5 @@ public class Vehicle
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODI5Mjc2ODldfQ==
+eyJoaXN0b3J5IjpbLTEzMzc2NDY4MSwtMTY4MjkyNzY4OV19
 -->
