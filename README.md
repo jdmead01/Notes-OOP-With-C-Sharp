@@ -63,7 +63,14 @@ public class Vehicle
      }
 }
 ```
+# Access Modifiers
+
+C# allows for control over **where** your class members can be accessed, achieved by using a set of keywords - each with a specific rule regarding that member's **accessibility**  **level****.** They are:
+
+ - Public: No access restrictions 
+ - private: Access restricted to own class 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzc2NDY4MSwtMTY4MjkyNzY4OV19
+eyJoaXN0b3J5IjpbLTEyMDQ3ODYwMzgsLTEzMzc2NDY4MSwtMT
+Y4MjkyNzY4OV19
 -->
