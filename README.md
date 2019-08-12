@@ -68,9 +68,13 @@ public class Vehicle
 C# allows for control over **where** your class members can be accessed, achieved by using a set of keywords - each with a specific rule regarding that member's **accessibility**  **level****.** They are:
 
  - Public: No access restrictions 
- - private: Access restricted to own class 
+ - private: Access restricted to own class (default for class members)
+ - protected: Access restricted to own class, and any child class
+ - internal: Access restricted to Assembly (essentially, your project's compiled .dll)
+
+To see these in action, let's examine a simple demonstration 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDQ3ODYwMzgsLTEzMzc2NDY4MSwtMT
+eyJoaXN0b3J5IjpbLTIwNDgzMzY1NTcsLTEzMzc2NDY4MSwtMT
 Y4MjkyNzY4OV19
 -->
