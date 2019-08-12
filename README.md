@@ -51,7 +51,19 @@ public class Program
     }
 }
 ```
-If we want all instances of our class to have some initial value, we can achieve this by providing a Constructor that takes no arguments, but initializes values within the Constructor body
+If we want all instances of our class to have some initial value, we can achieve this by providing a Constructor that takes no arguments, but initializes values within the Constructor body.
+```
+public class Vehicle
+{
+     public int NumPassengers;
+    
+     public Vehicle()
+     {
+          NumPassengers = 5;
+     }
+}
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg5Mjg0MjE0XX0=
+eyJoaXN0b3J5IjpbLTE2ODI5Mjc2ODldfQ==
 -->
