@@ -93,8 +93,36 @@ class Vehicle
     }
 }
 ```
+Now I am able to access these fields, and print their values to the Console.
 
+![](https://s3.amazonaws.com/General_V88/boomyeah2015/codingdojo/curriculum/content/chapter/public-access.png)
+
+## Encapsulation
+
+Of course, you will not want every class member to be public - in fact, you will want to keep all members as restricted as you are able. The idea is to follow a common OOP principle of  **encapsulation**: to hide internal implementation from outside code - as much as possible - and to only publicly provide what is essential. By making Color and MaxNumPassengers  **public**, we are allowing read and write access to these fields from anywhere. Generally, this is not desirable. A common way to deal with this problem, is to use  **properties**  to be a public "wrapper" for our private fields. By using only a  **getter**, we can provide public read-only access to our private fields.
+
+Let's see how we may modify the Vehicle class to achieve this:
+```javascript
+class Vehicle
+{
+    private int maxNumPassengers;
+    private string color;
+    public int MaxNumPassengers
+    {
+        get { return maxNumPassengers; }
+    }
+    public string Color
+    {
+        get { return color; }
+    }
+    public Vehicle(int maxPass, string col)
+    {
+        maxNumPassengers = maxPass;
+        color = col;
+    }
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI3MzcxNzg3LC0xMzM3NjQ2ODEsLTE2OD
-I5Mjc2ODldfQ==
+eyJoaXN0b3J5IjpbMTE4OTkxMjYxNCwtMTMzNzY0NjgxLC0xNj
+gyOTI3Njg5XX0=
 -->
